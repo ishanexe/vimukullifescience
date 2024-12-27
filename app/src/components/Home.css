@@ -1,0 +1,55 @@
+.home-container {
+    height: 65vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    background-image: url('/eys.jpg'); /* Reference the image in the public folder */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    display: flex; /* Enable flexbox for content alignment */
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    color: black; /* Set text color for contrast */
+    text-shadow: 1px 1px 4px grey(0, 0, 0, 0.7); /* Add shadow for readability */
+    font-family: 'Arial', sans-serif;
+    position: relative; /* Establish positioning context for child elements */
+    
+  }
+  hr{
+    /* position: relative; */
+    /* padding-top: 20px; */
+    margin-top: 15px;
+    padding: 0.2px;
+  }
+  .text-overlay {
+    position: absolute;
+    bottom: 20px; /* Position 20px from the bottom */
+    right: 20px; /* Position 20px from the right */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 5px;
+  }
+
+
+
+
+
+ 
+  /* Media query for screens narrower than 768px */
+  @media (max-width: 550px) {
+    .home-container {
+      padding: 20px; /* Add padding for spacing */
+    }
+  
+    .text-overlay {
+      position: static; /* Remove absolute positioning */
+      margin-top: 20px; /* Add top margin for spacing */
+      margin-left: 20px; /* Add left margin for spacing */
+      background-color: rgba(0, 0, 0, 0.7); /* Adjust background for better readability */
+    }
+  }
+  
+
+
+
+

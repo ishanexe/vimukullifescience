@@ -1,0 +1,55 @@
+/* abtCss.css */
+
+/* Header style */
+.r {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(51, 104, 126);
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.r h1 {
+    margin-top: 70px;
+    opacity: 0; /* Initially hide the heading */
+    animation: slideFromLeft 1s forwards; /* Animation definition */
+}
+
+/* Animation for header */
+@keyframes slideFromLeft {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Main content style */
+.about-cont {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.abt-cont, .more-cont, .more_cont1 {
+    width: 60%;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgb(245, 248, 247);
+    border-radius: 10px;
+    font-size: 1.2em; /* Increased text size */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+.abt-cont h2, .more-cont h2, .more_cont1 h2 {
+    margin-top: 20px;
+}
+
+.write {
+    color: rgb(36, 35, 35);
+}
+
+
+

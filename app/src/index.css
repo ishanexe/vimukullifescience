@@ -1,0 +1,186 @@
+/* Global reset for padding, margin, and box-sizing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure no margin on body and html */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar styling */
+nav {
+  display: flex;
+  justify-content: center; /* Center the navbar elements */
+  align-items: center; /* Vertically center the items */
+  background-color: rgb(247, 240, 237); /* Background color */
+  width: 100%; /* Make the navbar take up 100% of the screen width */
+  height: 70px; /* Set the height of the navbar to 70px */
+  margin: 0; /* Ensure no margin from the top */
+  padding: 0; /* Ensure no padding */
+  overflow: hidden; /* Prevent overflow */
+  position: relative; /* So we can position logo correctly */
+  z-index: 10;
+}
+
+/* List container (ul) styling */
+ul {
+  display: flex; /* Aligns the list items horizontally */
+  list-style: none; /* Removes default bullet points */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  gap: 20px; /* Decreases the gap between the list items */
+  align-items: center; /* Centers items vertically */
+}
+
+/* List item styling */
+li {
+  padding: 10px 15px; /* Adjust padding */
+  display: flex;
+  align-items: center; /* Vertically center the list item */
+  font-weight: bold; /* Make list items bolder */
+  font-size: large;
+}
+
+/* Anchor tag styling */
+a {
+  text-decoration: none; /* Removes underline */
+  color: black; /* Default text color */
+}
+
+/* Hover effect for anchor tag */
+li a:hover {
+  color: purple; /* Changes link color on hover */
+}
+
+/* Hover effect for list items */
+li:hover {
+  color: red;
+}
+
+/* Red class styling */
+.red {
+  color: purple;
+}
+
+/* Logo styling */
+.logo {
+  position: absolute;
+  left: 20px; /* Ensures the logo stays on the left */
+  bottom: 10px; /* Moves the logo 10px below its current position */
+  height: 120px; /* Set the height as needed (larger logo) */
+  width: 160px; /* Set the width as needed (larger logo) */
+}
+
+.logo img {
+  width: 100%; /* Ensures the image fills the div */
+  height: 100%; /* Ensures the image fills the div */
+  object-fit: contain; /* Adjusts the image size without distorting it */
+  position: relative;
+  top: 40px;
+}
+
+/* whatsapp  */
+.icon-button {
+  width: 50px; /* Adjust width */
+  height: 50px; /* Adjust height */
+  border-radius: 50%;
+  background-image: url('/what.png');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  line-height: 0;
+  position: relative;
+  left: 450px;
+  border: black 1.5px solid;
+}
+
+.icon-button:focus {
+  outline: none;
+}
+
+
+/* part 1    */
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack the navbar items vertically */
+    height: auto; /* Allow the height to adjust based on content */
+    padding: 10px 0; /* Adjust padding */
+    justify-content: flex-start; /* Align items to the start vertically */
+  }
+
+  .logo {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    left: 0; /* Center the logo horizontally */
+    width: 170px; /* Increased logo width */
+    height: 170px; /* Increased logo height */
+  }
+  
+
+  ul {
+    flex-direction: column; /* Stack the list items vertically */
+    gap: 15px; /* Decrease the gap between list items */
+    align-items: center; /* Center the list items */
+  }
+
+  li {
+    padding: 8px 10px; /* Reduce padding */
+    font-size: large; /* Adjust font size */
+    position: relative;
+    bottom: 20px;
+  }
+  .icon-button {
+    width: 40px; /* Adjust width */
+    height: 40px; /* Adjust height */
+    left: 3px; /* Position it closer to the left side */
+  }
+  
+}
+
+/* For mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  nav {
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .logo {
+    position: relative;
+    bottom: 40px;
+    right: 20px;
+    left: 0; /* Center the logo horizontally */
+    width: 150px; /* Increased logo width */
+    height: 150px; /* Increased logo height */
+  }
+  
+
+  ul {
+    gap: 8px; /* Further reduce gap */
+  }
+
+  li {
+    font-size: large; /* Adjust font size */
+    position: relative;
+    bottom: 20px;
+  }
+  .icon-button {
+    
+    width: 35px; /* Further reduce width */
+    height: 35px; /* Further reduce height */
+    left: 3px; /* Move it closer to the left */
+  }
+}
+
+
+
+

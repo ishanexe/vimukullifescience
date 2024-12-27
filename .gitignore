@@ -1,0 +1,25 @@
+# Node.js dependencies
+node_modules/
+
+# Production build output
+build/
+
+# Environment variables
+.env
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# IDE-specific settings
+.vscode/
+
+# System files
+AppData/
+.DS_Store
+Thumbs.db
+
+# Debugging files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

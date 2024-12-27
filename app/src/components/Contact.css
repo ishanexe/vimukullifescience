@@ -1,0 +1,124 @@
+.r {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(51, 104, 126);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.r h1 {
+    margin-top: 70px;
+    opacity: 0; /* Initially hide the heading */
+    animation: slideFromLeft 1s forwards ease-in-out; /* Animation with smooth easing */
+}
+
+/* Animation for header */
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Map container styling */
+.map-container {
+    width: 100%; /* Full width */
+    height: 450px; /* Height for the map */
+    margin-top: 10px; /* Add top margin */
+    position: relative; /* Relative positioning */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.map-container iframe {
+    width: 100%; /* Full width of container */
+    height: 100%; /* Full height of container */
+    border: 0; /* Remove border */
+}
+
+/* Circle styling for icons */
+.circle {
+    width: 50px; /* Circle size */
+    height: 50px; /* Circle size */
+    border-radius: 50%; /* Make it circular */
+    background-color: #f0f0f0; /* Circle background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; /* Space between icon and text */
+    transition: background-color 0.2s ease-in-out; /* Smooth background change */
+}
+
+.circle:hover {
+    background-color: #ddd; /* Change background on hover */
+}
+
+/* Contact item styling */
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space between contact items */
+    transition: transform 0.2s ease-in-out; /* Add hover effect */
+}
+
+.contact-item:hover {
+    transform: scale(1.05); /* Slight zoom-in on hover */
+}
+
+.contact-item h2 {
+    margin: 0;
+    position: relative;
+    top: 20px;
+}
+
+.contact-item p {
+    color: blue;
+    width: 300px;
+    position: relative;
+    top: 20px;
+}
+
+/* Styling for the address container */
+.add {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+
+    .contact-item{
+        margin: 40px;
+    }
+    .r h1 {
+        margin-top: 50px; /* Adjust margin for smaller screens */
+    }
+
+    .map-container {
+        height: 300px; /* Reduce height for smaller screens */
+    }
+
+    .add {
+        flex-direction: column; /* Stack items vertically */
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+   
+    .circle {
+        
+        position: relative;
+        top: 5px;
+    }
+
+    
+}
